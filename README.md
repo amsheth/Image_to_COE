@@ -1,6 +1,6 @@
-# Palettizer
+# Image_to_COE
 
-Generates SystemVerilog modules that store a palettized image into inferred M9K on-chip memory.
+Generates SystemVerilog modules that can be used to convert it and use an COE file.
 
 # How to use:
 
@@ -19,7 +19,7 @@ Generates SystemVerilog modules that store a palettized image into inferred M9K 
 
 These files are found in ```<image_name>/```
 * ```<image_name>.qip``` - Quartus IP file. **ADD TO QUARTUS PROJECT**
-* ```<image_name>.mif``` - Memory Initialization File with palettized image data in row-major order.
+* ```<image_name>.COE``` - COE based Memory Initialization File with palettized image data in row-major order.
 * ```<image_name>_example.py``` - example color mapper file.
 * ```<image_name>_out.png``` - output generated png.
 * ```<image_name>_palette.sv``` - output palettes in a SystemVerilog file.
@@ -31,7 +31,7 @@ These files are found in ```<image_name>/```
 * ```main.py``` - top python file, execute this.
 * ```src/palettizer.py``` - generates palettes and palettized image.
 * ```src/write_example.py``` - generates the example module.
-* ```src/write_mif.py``` - generates the Memory Initialization File (MIF).
+* ```src/write_coe.py``` - generates the Memory Initialization File (MIF).
 * ```src/write_palette.py``` - generates the palette module.
 * ```src/write_png.py``` - generates the output picture.
 * ```src/write_rom.py``` - generates the inferred ROM module.
