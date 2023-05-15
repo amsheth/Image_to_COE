@@ -79,38 +79,7 @@ Essentially, do:
 	2) Use the tool and regenerate the modules/assets.
 	3) When setting the VGA R/G/B outputs based on DrawX/Y, don't just look at sprite_on. Also make sure the palette module's r/g/b output isn't that same hot pink.  
 
-* Here's an example for how to instantiate the example in your top level (to verify everything was generated/added correctly):  
-
-```systemverilog
-logic vga_clk, blank;
-logic [9:0] DrawX, DrawY;
-
-vga_controller vga ( // the provided VGA controller from Lab 6 and 7
-	.Clk       (MAX10_CLK1_50),
-	.Reset     (1'b0),
-	.hs        (VGA_HS),
-	.vs        (VGA_VS),
-	.pixel_clk (vga_clk),
-	.blank     (blank),
-	.sync      (),
-	.DrawX     (DrawX),
-	.DrawY     (DrawY)
-);
-
-pic_example pic ( // the generated example. in this case, the image was called "pic"
-	.vga_clk (vga_clk),
-	.DrawX   (DrawX), 
-	.DrawY   (DrawY),
-	.blank   (blank),
-	.red     (VGA_R),
-	.green   (VGA_G),
-	.blue    (VGA_B)
-);
-```
-
 * Deciding how many colors to use depends on your image. You will need to make a compromise between resolution and number of colors. Some images are mostly of one range of colors, while others may go across the entire spectrum. For example, "butterfly.jpg" is mostly yellow, so you can get away with only using 4 bits and thus having the full 640x480 resolution. "cat.jpg" uses many more colors though, so it will look better if you use more bits for more colors and sacrifice some resolution.
-
-* M9K usage is weird. Just because a M9K has a certain number of bits, doesn't mean that it will be able to use it all effectively, depending on the data width.
 
 Enjoy!
 -Ian D
