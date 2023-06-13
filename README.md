@@ -18,8 +18,8 @@ Generates SystemVerilog modules that can be used to convert it and use an COE fi
 # Generated Files:
 
 These files are found in ```<image_name>/```
-* ```<image_name>.qip``` - Quartus IP file. **ADD TO QUARTUS PROJECT**
-* ```<image_name>.COE``` - COE based Memory Initialization File with palettized image data in row-major order.
+<!-- * ```<image_name>.qip``` - Quartus IP file. **ADD TO QUARTUS PROJECT** -->
+* ```<image_name>.COE``` - COE based Memory Initialization File with palettized image data in row-major order.  **ADD TO VIVADO PROJECT**
 * ```<image_name>_example.py``` - example color mapper file.
 * ```<image_name>_out.png``` - output generated png.
 * ```<image_name>_palette.sv``` - output palettes in a SystemVerilog file.
@@ -82,4 +82,4 @@ Essentially, do:
 * Deciding how many colors to use depends on your image. You will need to make a compromise between resolution and number of colors. Some images are mostly of one range of colors, while others may go across the entire spectrum. For example, "butterfly.jpg" is mostly yellow, so you can get away with only using 4 bits and thus having the full 640x480 resolution. "cat.jpg" uses many more colors though, so it will look better if you use more bits for more colors and sacrifice some resolution.
 
 Enjoy!
--Ian D
+-Arnav Sheth
