@@ -1,6 +1,7 @@
 # Image_to_COE
 
-Generates SystemVerilog modules that can be used to convert it and use an COE file. Credit to @https://github.com/iandailis for allowing me to modify his code to create a COE file.
+Generates SystemVerilog modules that can be used to convert it and use an COE file. 
+Credit to @https://github.com/iandailis for allowing me to modify his code to create a COE file.
 
 # How to use:
 
@@ -58,7 +59,7 @@ Oh no! You have no M9K RAM cells left. You have a few options here:
 	* (difficult and usually overkill) Use SDRAM and frame buffers.
 	 -->
 * *How does this tool work?*  
-I took from ECE 311 Lab 4 Exercise 6 the provided LM Quantizer, somewhat simplified it, then created a bunch of wrapper code that generates the modules and assets. Here is some further reading into k-means clustering:  
+Ian took this from ECE 311 Lab 4 Exercise 6 the provided LM Quantizer, somewhat simplified it, then created a bunch of wrapper code that generates the modules and assets. Here is some further reading into k-means clustering:  
 https://en.wikipedia.org/wiki/K-means_clustering  
 https://scikit-learn.org/stable/modules/clustering.html#k-means  
 
