@@ -43,17 +43,17 @@ Don't worry about it.
 * *Warning (10230): Verilog HDL assignment warning at <image_name>_example.sv(12): truncated value with size 32 to match size of target (11)*  
 Also don't worry about it.
 
-* *Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ./<image_name>/<image_name>.mif for ROM instance ALTSYNCRAM*  
+<!-- * *Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ./<image_name>/<image_name>.mif for ROM instance ALTSYNCRAM*  
 The comment on <image_name>_rom.sv (7) is a compiler directive to initialize the inferred M9K memory with the contents in a given .mif file. This error message means it couldn't find the generated .mif file. There are a few things you can do here:
 	* Option 1 (recommended): Make sure the generated folder is in the same place as the .qpf (quartus project) file. The specified path in the generated rom assumes this.
-	* Option 2 (could be easier): Change the path in the compiler directive to the actual path of the generated .mif file. The path can also be an absolute path.
+	* Option 2 (could be easier): Change the path in the compiler directive to the actual path of the generated .mif file. The path can also be an absolute path. -->
 	
-* *Error (170040): Can't place all RAM cells in design*  
+<!-- * *Error (170040): Can't place all RAM cells in design*  
 Oh no! You have no M9K RAM cells left. You have a few options here:  
 	* Reduce the resolution for your image when generating.
 	* Reduce the number color bits for your image when generating.
 	* (difficult and usually overkill) Use SDRAM and frame buffers.
-	
+	 -->
 * *How does this tool work?*  
 I took from ECE 311 Lab 4 Exercise 6 the provided LM Quantizer, somewhat simplified it, then created a bunch of wrapper code that generates the modules and assets. Here is some further reading into k-means clustering:  
 https://en.wikipedia.org/wiki/K-means_clustering  
