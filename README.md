@@ -11,8 +11,11 @@ Generates SystemVerilog modules that can be used to convert it and use an COE fi
 5) Run ```python main.py```.
 6) Follow the instructions in the terminal. There are two provided images to try out: ```cat.jpg``` and ```butterfly.jpg```.
 7) Look at the output image in the generated folder and verify that your chosen settings look okay.
-8) Add the generated .COE file and three .sv files (rom, palette, and example) to your Vivado project.
-9) Instantiate the example module in your project, connect all the signals, compile, program, and verify that you see your generated image on the screen!
+8) In the IP Catalog look up "Block Memory Generator" under Memories and Storage Elements.
+9) Change the Component name to ...\_example, Memory Type to Single Port Rom and Port A Width and Depth according to what the Image has generated. Disable the Enable Port Type.
+10) Add the generated .COE file in the Other Options page. You do not need to fill the remaining Memory Locations.
+11) Load the three .sv files (rom, palette, and example) to your Vivado project.
+12) Instantiate the example module in your project, connect all the signals, compile, program, and verify that you see your generated image on the screen!
 
 # Generated Files:
 
