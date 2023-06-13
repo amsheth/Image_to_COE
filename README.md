@@ -11,8 +11,8 @@ Generates SystemVerilog modules that can be used to convert it and use an COE fi
 5) Run ```python main.py```.
 6) Follow the instructions in the terminal. There are two provided images to try out: ```cat.jpg``` and ```butterfly.jpg```.
 7) Look at the output image in the generated folder and verify that your chosen settings look okay.
-8) Put the entire generated folder into your quartus project directory (that's the same place as your .qpf file).
-9) Add the generated .qip file to your Quartus project. This should add three .sv files (rom, palette, and example).
+<!-- 8) Put the entire generated folder into your quartus project directory (that's the same place as your .qpf file). -->
+8) Add the generated .COE file and three .sv files (rom, palette, and example) to your Vivado project.
 10) Instantiate the example module in your project, connect all the signals, compile, program, and verify that you see your generated image on the screen!
 
 # Generated Files:
