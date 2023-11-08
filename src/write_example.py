@@ -48,9 +48,9 @@ def write_example(image_name, image_shape, width, depth):
 
 		# instantiate the ROM
 		f"""{image_name}_rom {image_name}_rom (\n"""
-		f"""\t.clock   (negedge_vga_clk),\n"""
-		f"""\t.address (rom_address),\n"""
-		f"""\t.q       (rom_q)\n"""
+		f"""\t.clka   (negedge_vga_clk),\n"""
+		f"""\t.addra (rom_address),\n"""
+		f"""\t.douta       (rom_q)\n"""
 		f""");\n"""
 		f"""\n"""
 
