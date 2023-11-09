@@ -49,6 +49,7 @@ Don't worry about it.
 Also don't worry about it.
 * *The .blank is meant to be filled by the vde we get from vga controller.*
 * If you dont know where the enable pin option is in the IP use .ena(1)
+* pip is not recognized as name .... Make sure you have python installed and sometimes it doesnt work with 3.12 so you should download the python 3.11 from Microsoft store. (Linux users can use sudo)
  
 <!-- * *Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ./<image_name>/<image_name>.mif for ROM instance ALTSYNCRAM*  
 The comment on <image_name>_rom.sv (7) is a compiler directive to initialize the inferred M9K memory with the contents in a given .mif file. This error message means it couldn't find the generated .mif file. There are a few things you can do here:
