@@ -14,7 +14,7 @@ Credit to @https://github.com/iandailis for allowing me to modify his code to cr
 6) Follow the instructions in the terminal. There are two provided images to try out: ```cat.jpg``` and ```butterfly.jpg```.
 7) Look at the output image in the generated folder and verify that your chosen settings look okay.
 8) In the IP Catalog look up "Block Memory Generator" under Memories and Storage Elements.
-9) Change the Component name to ...\_rom, Memory Type to Single Port Rom and Port A Width and Depth according to what the Image has generated. Disable the Enable Port Type.
+9) Change the Component name to ...\_rom, Memory Type to Single Port Rom and Port A Width and Depth according to what the Image has generated. Disable the Enable Port Type (Set it as #Always enabled).
 11) Add the generated .COE file in the Other Options page. You do not need to fill the remaining Memory Locations.
 12) Load the 2 .sv files (palette, and example) to your Vivado project.
 13) Instantiate the example module in your project, connect all the signals, compile, program, and verify that you see your generated image on the screen!
@@ -50,6 +50,7 @@ Also don't worry about it.
 * *The .blank is meant to be filled by the vde we get from vga controller.*
 * If you dont know where the enable pin option is in the IP use .ena(1)
 * pip is not recognized as name .... Make sure you have python installed and sometimes it doesnt work with 3.12 so you should download the python 3.11 from Microsoft store. (Linux users can use sudo)
+* The depth and the width are give in the COE files.
  
 <!-- * *Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ./<image_name>/<image_name>.mif for ROM instance ALTSYNCRAM*  
 The comment on <image_name>_rom.sv (7) is a compiler directive to initialize the inferred M9K memory with the contents in a given .mif file. This error message means it couldn't find the generated .mif file. There are a few things you can do here:
