@@ -14,7 +14,7 @@ Credit to @https://github.com/iandailis for allowing me to modify his code to cr
 6) Follow the instructions in the terminal. There are two provided images to try out: ```cat.jpg``` and ```butterfly.jpg```.
 7) Look at the output image in the generated folder and verify that your chosen settings look okay.
 8) In the IP Catalog look up "Block Memory Generator" under Memories and Storage Elements.
-9) Change the Component name to ...\_rom, Memory Type to Single Port Rom and Port A Width and Depth according to what the Image has generated. Disable the Enable Port Type (Set it as #Always enabled).
+9) Change the Component name to ...\_rom, Memory Type to Single Port Rom and Port A Width and Depth according to what the Image has generated. Disable the Enable Port Type (Set it as # Always enabled).
 11) Add the generated .COE file in the Other Options page. You do not need to fill the remaining Memory Locations.
 12) Load the 2 .sv files (palette, and example) to your Vivado project.
 13) Instantiate the example module in your project, connect all the signals, compile, program, and verify that you see your generated image on the screen!
