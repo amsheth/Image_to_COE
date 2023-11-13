@@ -1,6 +1,7 @@
 # Image_to_COE
 
 Generates SystemVerilog modules that can be used to convert it and use an COE file. 
+## Guys Please read the entire Readme including FAQ's and some Notes/Recommendations to make sure you understand what to do.
 
 Credit to @https://github.com/iandailis for allowing me to modify his code to create a COE file.
 
