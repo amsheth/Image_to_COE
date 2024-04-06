@@ -14,7 +14,7 @@ from os import makedirs
 
 def main():
 	# open input image
-	image_path = input("Input image (eg: waterfall.jpg): ")
+	image_path = input("Input image (eg: waterfall.jpeg): ")
 	image = imread(image_path).astype("uint8")
 
 	# get number of colors to compress into
