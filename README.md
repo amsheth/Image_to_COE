@@ -9,7 +9,7 @@ Credit to @https://github.com/iandailis for allowing me to modify his code to cr
 
 1) Download Python 3 (developed on 3.11.1 for Windows 10).
 2) Download this entire repository.
-3) Open a terminal inside this repository. (PowerShell on Windows) (Optional: Use a python virtual environment, instructions below).
+3) Open a terminal inside this repository. (PowerShell on Windows) (Optional: Use a python virtual environment (Not Recommended), instructions below).
 4) Run ```pip install -r requirements.txt```. This installs all the required packages.
 5) Run ```python main.py```.
 6) Follow the instructions in the terminal. There are two provided images to try out: ```cat.jpg``` and ```butterfly.jpg```.
