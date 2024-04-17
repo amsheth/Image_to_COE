@@ -53,6 +53,7 @@ Also don't worry about it.
 * pip is not recognized as name .... Make sure you have python installed and sometimes it doesnt work with 3.12 so you should download the python 3.11 from Microsoft store. (Linux users can use sudo)
 * The depth and the width are give in the COE files.
 * the VGA_clk is the 25Mhz clk.
+* If you have multiple versions of Python first install python 3.11 from Microsoft store and use ```python3.11``` instead of ```python```.
  
 <!-- * *Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ./<image_name>/<image_name>.mif for ROM instance ALTSYNCRAM*  
 The comment on <image_name>_rom.sv (7) is a compiler directive to initialize the inferred M9K memory with the contents in a given .mif file. This error message means it couldn't find the generated .mif file. There are a few things you can do here:
